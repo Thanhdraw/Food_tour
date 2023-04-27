@@ -13,13 +13,12 @@
   <div class="food-main" *ngFor="let food of foods">
     <div
       class="food-item"
-      class="food-item"
       [class.selected]="food === selectedFood"
       type="button"
-      (click)="onSelect(food)"
+      routerLink="/foods/{{food.id}}"
     >
-      <img src="{{food.img}}" alt="anh">
-      <h3>{{ food.name }}</h3>
+      <img src="{{food.img}}" alt="anh" routerLink="detail">
+      <h3 routerLink="/foods/{{food.img}}">{{ food.name }}</h3>
       <p class="name">{{ food.id }}:{{ food.des }}</p>
     </div>
   </div>

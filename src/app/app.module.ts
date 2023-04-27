@@ -11,6 +11,7 @@ import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
+import { MenuDetailComponent } from './menu-detail/menu-detail.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     MenuComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    MenuDetailComponent
   ],
   imports: [
     BrowserModule,
