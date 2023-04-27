@@ -1,0 +1,36 @@
+section{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    
+    
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+section .food-main{
+    
+    margin: 25px auto;
+    /* grid-template-columns: 300px 300px 300px 300px; */
+    /* grid-template-rows: 400px 400px; */
+    column-gap: 25px;
+    row-gap: 10vh;
+    /* height: 2000px; */
+}
+section .food-main .food-item{
+    text-align: center;
+    border-radius: 20px;
+    width: 270px;
+
+}
+section .food-item img{
+    border-radius:10px;
+
+    width: 100%;
+}
+section .food-item li{
+    /* display: flex; */
+}
