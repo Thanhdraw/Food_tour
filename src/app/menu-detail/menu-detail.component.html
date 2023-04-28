@@ -1,10 +1,38 @@
-<div *ngIf="selectedFood">
+<!-- <div *ngIf="selectedFood" >
     <h2>{{selectedFood.name | uppercase}} Details</h2>
     <div>id: {{selectedFood.id}}</div>
     <div>
-        <img src="selectedFood.id" alt="">
+        <img src="{{selectedFood.id}}" alt="">
       <p for="hero-name">Food name: </p>
-      <input id="hero-name" [(ngModel)]="selectedFood.img" placeholder="name">
+
+      <input id="hero-name" [(ngModel)]="selectedFood.id" placeholder="name">
     </div>
+  </div> -->
+<!-- <div *ngIf="selectedFood">
+  <h2>{{ selectedFood.name | uppercase }} Details</h2>
+  <div *ngIf="selectedFood.img">
+    <img src="{{ selectedFood.img }}" alt="{{ selectedFood.name }}">
+    <label for="food-name">Name:</label>
+    <input type="text" id="food-name" [(ngModel)]="selectedFood.name">
   </div>
-<p>trang san pham</p>
+  <div>
+    <label for="food-description">Description:</label>
+    <p id="food-description" [(ngModel)]="selectedFood.des"></p>
+  </div>
+</div> -->
+
+
+<p>{{selectedFood}}</p>
+
+<div *ngIf="selectedFood">
+  <h2>{{ selectedFood.name | uppercase }} Details</h2>
+  <div *ngIf="selectedFood.id">
+    <img [src]="selectedFood.id" alt="{{ selectedFood.id }}">
+    <label for="food-name">{{selectedFood.name}}</label>
+    <input type="text" id="food-name" [(ngModel)]="selectedFood.name">
+  </div>
+  <div>
+    <label for="food-description">Description:</label>
+    <p id="food-description" [(ngModel)]="selectedFood.name"></p>
+  </div>
+</div>

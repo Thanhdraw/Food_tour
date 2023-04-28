@@ -52,11 +52,12 @@
     max-width: 1600px;
     height: 542px;
     background-color: #ccc;
-    background-image: url(https://dulichviet.com.vn/images/bandidau/nhung-quy-tac-tren-mam-com-nguoi-viet-may-ai-con-nho.jpg);
+    background-image: url(https://i.pinimg.com/564x/14/e2/4f/14e24f745fba4337d5bd86636754865a.jpg);
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 100%;
     background-position: center;
-    width: auto;
+    object-fit: center;
+    border-radius: 20px;
 }
 #slider .catering{
     position: absolute;
@@ -64,7 +65,11 @@
     left: 0;
     padding: 12px 24px;
     letter-spacing: 5px;
-    font-family: 'Times New Roman', Times, serif;
-    opacity: 0.6;
-    color: #000;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.75);
+    color: #fff;
+    font-size:7rem;
+    opacity: 0.9;
+    background-image: repeating-linear-gradient(180deg, #3d3d3d 0%, #3d3d3d 40%, #f1b05c 50%, #3d3d3d 60%, #3d3d3d 100%);
+    animation: slidingGradient 3s linear infinite;
 }
