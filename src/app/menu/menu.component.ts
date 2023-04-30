@@ -10,8 +10,8 @@ import { FOODS } from '../mock-food';
 export class MenuComponent {
   title='Menu';
   foods=FOODS;
+  
   selectedFood?: Food;
-
   onSelect(food: Food): void {
     this.selectedFood = food;
   }

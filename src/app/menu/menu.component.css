@@ -3,8 +3,7 @@ section{
     max-width: 1200px;
     margin: auto;
     flex-wrap: wrap;
-    margin-top: 25px;
-    
+    margin: 25px auto;
     
 }
 .menu{
@@ -12,12 +11,11 @@ section{
     justify-content: center;
 }
 section .food-main{
-    
+    text-align: center;
     margin: 25px auto;
     /* grid-template-columns: 300px 300px 300px 300px; */
     /* grid-template-rows: 400px 400px; */
-    column-gap: 25px;
-    row-gap: 10vh;
+
     /* height: 2000px; */
 }
 section .food-main .food-item{
@@ -32,6 +30,12 @@ section .food-item img{
     border-radius:10px;
     height: 100%;
     width: 100%;
+}
+section .food-main .food-item h3{
+    margin: 0;
+}
+section .food-main .food-item p{
+    margin: 0;
 }
 section .food-item li{
     /* display: flex; */

@@ -15,14 +15,14 @@ import { FOODS } from '../mock-food';
 export class MenuDetailComponent {
   selectedFood?: Food;
   @Input() food?: Food;
-  constructor(private route: ActivatedRoute, private foodService: FoodService) { }
-  onSelect(food: Food): void {
-    this.selectedFood = food;
-  }
-  ngOnInit() {
-    this.route.paramMap.subscribe(params => {
-      const productId = params.get('productId');
-      this.selectedFood = this.foodService['getFoodById'](productId);
-    });
-  }
+  // constructor(private route: ActivatedRoute, private foodService: FoodService) { }
+  // onSelect(food: Food): void {
+  //   this.selectedFood = food;
+  // }
+  // ngOnInit() {
+  //   this.route.paramMap.subscribe(params => {
+  //     const productId = params.get('productId');
+  //     this.selectedFood = this.foodService['getFoodById'](productId);
+  //   });
+  // }
 }

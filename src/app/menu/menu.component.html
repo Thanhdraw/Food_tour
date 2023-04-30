@@ -15,10 +15,11 @@
       <img src="{{food.img}}" alt="anh"  routerLink="/menu/{{food.id}}">
       <h3 routerLink="/foods/{{food.img}}">{{ food.name }}</h3>
       <p class="name">{{ food.id }}:{{ food.des }}</p>
-    <button [class.selected]="food === selectedFood" type="button" (click)="onSelect(food)" ></button>
-
     </div>
+    <!-- <button [class.selected]="food === selectedFood" type="button" (click)="onSelect(food)" ></button> -->
 
   </div>
 </section>
+<!-- <app-menu-detail [food]="selectedFood"></app-menu-detail> -->
+
 <app-menu-detail [food]="selectedFood"></app-menu-detail>
